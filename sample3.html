@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample3</title>
+    <link rel="stylesheet" href="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/b8be333c62.js" crossorigin="anonymous"></script>
+
+    <style>
+        .cpinkl {
+            color: #fd1a55;
+        }
+        
+        .cpinkd {
+            color: #d40239;
+        }
+        
+        .cbluel {
+            color: #349cfd
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .cards-grp {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .cards-item {
+            height: 210px;
+            width: 370px;
+            margin: 10px;
+            padding: 15px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            border: 2px solid #349cfd;
+            position: relative;
+        }
+        
+        .three-zero {
+            position: relative;
+        }
+        
+        .whole {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: #f8104e;
+            top: 0px;
+            right: 12px;
+            text-align: center;
+            color: rgb(253, 253, 253);
+            font-size: 23px;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .last-cont {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4a4f55;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: flex-end;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        
+        .three {
+            position: absolute;
+            height: 140px;
+            width: 340px;
+            left: 15px;
+            top: 15px;
+        }
+        
+        .three-one {
+            padding: 0px 0px 4px 0px;
+            width: 290px;
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        
+        .three-two {
+            font-size: 16px;
+            color: #4a4f55;
+            font-weight: bold;
+        }
+        
+        .three-three {
+            font-size: 16px;
+            color: #4a4f55;
+        }
+        
+        .three-four {
+            font-size: 18px;
+            color: #4a4f55;
+            padding: 15px 0px 0px 0px;
+        }
+        
+        .sub-butt {
+            border: solid 2px #d40239;
+            padding: 6px;
+            font-size: 18px;
+            border-radius: 18px;
+        }
+        
+        @media only screen and (min-width: 281px) and (max-width: 320px) {
+            .cards-item {
+                width: 320px;
+                height: 190px;
+            }
+            .three {
+                width: 270px;
+            }
+            .three-one {
+                width: 200px;
+                font-size: 20px;
+            }
+            .three-two {
+                font-size: 14px;
+            }
+            .three-three {
+                font-size: 14px;
+            }
+            .three-four {
+                font-size: 16px;
+            }
+        }
+        
+        @media only screen and (max-width: 280px) {
+            .cards-item {
+                width: 280px;
+                height: 190px;
+            }
+            .three {
+                width: 230px;
+            }
+            .three-one {
+                width: 180px;
+                font-size: 17px;
+            }
+            .three-two {
+                font-size: 12px;
+            }
+            .three-three {
+                font-size: 12px;
+            }
+            .three-four {
+                font-size: 14px;
+            }
+            .whole {
+                height: 35px;
+                width: 35px;
+            }
+        }
+        
+        @media only screen and (min-width: 321px) and (max-width: 450px) {
+            .cards-item {
+                width: 360px;
+            }
+            .three {
+                width: 320px;
+            }
+        }
+        
+        .head {
+            font-size: 50px;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <h3>Office Orders</h3>
+    </div>
+    <div class="cards-grp">
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div>
+                            <p class="number">99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div>
+                            <p class="number">99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div class="number">
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+        <div class="cards-item">
+            <div class="three">
+                <div class="three-zero">
+                    <div class="whole">
+                        <div>
+                            <p>99</p>
+                        </div>
+                    </div>
+                    <div class="three-one">
+                        <p>Revised Maintance Fee</p>
+                    </div>
+                    <div class="three-two">
+                        <p>38th Board Meeting</p>
+                    </div>
+                    <div class="three-three">
+                        <p>4027-37/UPSIDA/ESD</p>
+                    </div>
+
+                    <div class="three-four">
+                        <p>Decision made in 38th Board Meeting in reference to Maintance Fee.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-cont">
+                <div>28 jun 2021</div>
+                <div class="sub-butt">Submit</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        var num = document.getElementsByClassName("number").innerHTML;
+        var i;
+        for (i = 1; i < num.length; i++) {
+            num = "i";
+        }
+    </script>
+
+</body>
+
+</html>
